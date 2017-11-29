@@ -44,7 +44,20 @@ d3.json("miserables.json", function(error, graph) {
     .data(graph.nodes)
     .enter().append("circle")
       .attr("r", 5)
-      .attr("fill", function(d) { return color(d.group); })
+      .attr("fill", 
+      function(d) {
+          if(d.group == 1)
+          {
+              // Call color() to increment the scale so 
+              // the other colors (not group 1) display normally
+              color(d.group);
+              return "purple";
+          }
+          else
+          {
+              return color(d.group); 
+          }
+      })
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
