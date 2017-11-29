@@ -23,7 +23,10 @@
     {"id": "Favourite", "group": 3},
     {"id": "Dahlia", "group": 3},
     {"id": "Zephine", "group": 3},
-    {"id": "Fantine", "group": 3}
+    {"id": "Fantine", "group": 3},
+	{"id": "Antony", "group": 4},
+	{"id": "Mirdaki", "group": 4},
+	{"id": "Bhavesh", "group": 4}
   ],
   "links": [
     {"source": "Napoleon", "target": "Myriel", "value": 1},
@@ -73,6 +76,8 @@
     {"source": "Fantine", "target": "Dahlia", "value": 4},
     {"source": "Fantine", "target": "Zephine", "value": 4},
     {"source": "Fantine", "target": "Marguerite", "value": 2},
-    {"source": "Fantine", "target": "Valjean", "value": 9}
+    {"source": "Fantine", "target": "Valjean", "value": 9},
+	{"source": "Antony", "target": "Mirdaki", "value": 4},
+	{"source": "Mirdaki", "target": "Bhavesh", "value": 5}
   ]
 }
