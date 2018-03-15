@@ -4,7 +4,7 @@ Welcome to a visual representation of the [Open Source Student Network](https://
 
 OSSN is a network of students, mentors, and open source organizations and professionals who teach, create and contribute to projects that meaningfully advance the Open Source movement. 
 
-This project is using the [3 Javascript library](https://github.com/d3/d3/wiki) for the graphical representation of the network members.
+This project is using the [d3 Javascript library](https://github.com/d3/d3/wiki) for the graphical representation of the network members.
 
 ## Contribute
 
@@ -35,9 +35,11 @@ If you are new, thanks for choosing to help out!
 		- Note: You may need to run a local web server to see the webpage
 			- Download [python 3](https://www.python.org/downloads/) and run `python -m SimpleHTTPServer 8080` at the root of the project
 			- Type in "localhost:8080" in your browser
+			- It should look like the image below
 8. [Push your changes to your GitHub repository](https://guides.github.com/activities/forking/#making-changes)
 9. [Make a pull request to merge your changes with the original code](https://guides.github.com/activities/forking/#making-a-pull-request)
 
+![A working Network example](docs/working-network.png)
 
 ## Get Connected
 
