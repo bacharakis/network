@@ -28,7 +28,7 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json("miserables.json", function(error, graph) {
+d3.json("nodes.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")
@@ -44,18 +44,18 @@ d3.json("miserables.json", function(error, graph) {
     .data(graph.nodes)
     .enter().append("circle")
       .attr("r", 5)
-      .attr("fill", 
+      .attr("fill",
       function(d) {
           if(d.group == 1)
           {
-              // Call color() to increment the scale so 
+              // Call color() to increment the scale so
               // the other colors (not group 1) display normally
               color(d.group);
               return "purple";
           }
           else
           {
-              return color(d.group); 
+              return color(d.group);
           }
       })
       .call(d3.drag()

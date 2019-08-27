@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "Change me (OSSN Member 1)", "group": 1},
+    {"id": "Change me (OSSN Member 2)", "group": 1}
+  ],
+  "links": [
+    {"source": "Change me (OSSN Member 2)", "target": "Change me (OSSN Member 1)", "value": 10}
+  ]
+}
